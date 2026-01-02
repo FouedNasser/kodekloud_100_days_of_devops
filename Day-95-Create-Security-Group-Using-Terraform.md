@@ -72,7 +72,7 @@ The Nautilus DevOps team is continuing their AWS migration by setting up network
     ```bash
     terraform show
     ```
-2.  We can also verify via the AWS CLI (using the LocalStack endpoint):
+2.  We can also verify via the AWS CLI (using the correct endpoint):
     ```bash
-    aws --endpoint-url=http://localhost:4566 ec2 describe-security-groups --group-names datacenter-sg
+    aws --endpoint-url=http://aws:4566 ec2 describe-security-groups --group-names datacenter-sg
     ```
